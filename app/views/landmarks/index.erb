@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NYC Landmarks</title>
+</head>
+<body>
+  <h3>Important Landmarks:</h3>
+    <ol>
+      <%@landmarks.each do |landmark|%>
+      <li>Name: <a href="/landmarks/<%=landmark.id%>"><%=landmark.name%></a><br>
+      Year Completed: <%=landmark.year_completed%><br><br>
+      </li>
+      <%end%>
+      
+    </ol>
+  
+</body>
+</html>
